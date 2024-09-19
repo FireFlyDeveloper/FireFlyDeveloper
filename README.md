@@ -1,19 +1,31 @@
+# Hi, I'm Kim Eduard Saludes 👋
 
-- 👋 Hi, I’m @FireFlyDeveloper
+Welcome to my GitHub profile! I'm a developer passionate about building awesome things with Python, Node.js, JavaScript, and more!
 
-- 👀 I’m interested in exploring the vast realms of technology and bringing innovative solutions to life. My passion lies in creating seamless user experiences through web development and mastering the art of Full Stack Development.
-
-- 🌱 I’m currently learning and expanding my skills in various technologies, including front-end frameworks like React.js and Vue.js, as well as back-end technologies such as Node.js, Python, Fastapi and Express. Additionally, I'm diving into database management with MongoDB and SQL, and continuously enhancing my understanding of serverless architecture and cloud computing.
-
-- 💞️ I’m looking to collaborate on exciting projects that challenge the status quo and push the boundaries of what's possible in the digital landscape. Whether it's building robust web applications, optimizing database performance, or implementing cutting-edge features, I'm eager to contribute my skills to collaborative and forward-thinking teams.
-
-- 📫 How to reach me: Feel free drop me an email at saludeskimdev@gmail.com. I'm always open to networking and discussing potential collaborations or opportunities.
-
+## 🌟 About Me
+- 🔭 I’m currently working on **AniFire - Anime/Manga/LN**
+- 🌱 I’m learning **Kotlin for Android Application Development**
+- 💬 Ask me about **Python, JavaScript, Node.js, TypeScript, or Web Development**
 - 😄 Pronouns: He/Him
-
 - ⚡ Fun fact: When not immersed in coding, you can find me working out, reading novels, or watching anime episodes. I believe that a well-balanced life outside of coding enhances creativity and brings a unique perspective to problem-solving.
 
-<!---
-FireFlyDeveloper/FireFlyDeveloper is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## 📊 GitHub Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=FireFlyDeveloper&show_icons=true&theme=radical)
+
+## 🏆 GitHub Trophies
+![Trophies](https://github-profile-trophy.vercel.app/?username=FireFlyDeveloper&theme=radical&no-bg=true&no-frame=true)
+
+## 🚀 Technologies & Tools
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+</p>
+
+## 🔗 Connect with Me
+[![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FireFlyDeveloper)
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/kimslds)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:saludeskimdev@gmail.com)
