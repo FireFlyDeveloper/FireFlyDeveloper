@@ -2,20 +2,20 @@
 
 Welcome to my GitHub profile! I'm a developer passionate about building awesome things with Python, Node.js, JavaScript, and more!
 
-## 🌟 About Me
+## About Me
 - 🔭 I’m currently working on **AniFire - Anime/Manga/LN**
 - 🌱 I’m learning **Kotlin for Android Application Development**
 - 💬 Ask me about **Python, JavaScript, Node.js, TypeScript, or Web Development**
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: When not immersed in coding, you can find me working out, reading novels, or watching anime episodes. I believe that a well-balanced life outside of coding enhances creativity and brings a unique perspective to problem-solving.
 
-## 📊 GitHub Stats
+## GitHub Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=FireFlyDeveloper&show_icons=true&theme=radical)
 
-## 🏆 GitHub Trophies
+## GitHub Trophies
 ![Trophies](https://github-profile-trophy.vercel.app/?username=FireFlyDeveloper&theme=radical&no-bg=true&no-frame=true)
 
-## 🚀 Technologies & Tools
+## Technologies & Tools
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
@@ -25,7 +25,7 @@ Welcome to my GitHub profile! I'm a developer passionate about building awesome 
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 </p>
 
-## 🔗 Connect with Me
+## Connect with Me
 [![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FireFlyDeveloper)
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/kimslds)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:saludeskimdev@gmail.com)
