@@ -23,7 +23,7 @@ Welcome to my GitHub profile! I'm a developer passionate about building impactfu
 
 ## 🌐 Connect with Me
 [![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FireFlyDeveloper)
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=facebook&logoColor=white)]([https://www.facebook.com/kimslds](https://www.facebook.com/profile.php?id=61563082877208))
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=61563082877208)
 [![Email](https://img.shields.io/badge/Email-0A66C2?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:firefly@fireflylab.top)
 
 ## ☕ Support Me
