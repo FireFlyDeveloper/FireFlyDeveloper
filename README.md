@@ -1,13 +1,12 @@
 # Hi, I'm Kim Eduard Saludes 👋
 
-Welcome to my GitHub profile! I'm a developer passionate about building awesome things with Python, Node.js, JavaScript, and more!
+Welcome to my GitHub profile! I'm a developer passionate about building impactful projects with Python, Node.js, JavaScript, and more.
 
 ## 🚀 About Me
-- 🔭 I’m currently working on **AniFire - Anime/Manga/LN**
-- 🌱 I’m learning **Kotlin for Android Application Development**
-- 💬 Ask me about **Python, JavaScript, Node.js, TypeScript, or Web Development**
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: When not immersed in coding, you can find me working out, reading novels, or watching anime episodes. I believe that a well-balanced life outside of coding enhances creativity and brings a unique perspective to problem-solving.
+- 🌱 Expanding my skills with **Kotlin and React Native for Android Development**
+- 💬 Open to discussions about **Python, JavaScript, Node.js, TypeScript, and Web Development**
+- 😄 Pronouns: **He/Him**
+- ⚡ Fun fact: Outside of coding, I enjoy working out, reading novels, and watching anime. I believe a balanced lifestyle fosters creativity and brings fresh perspectives to problem-solving.
 
 ## 📊 GitHub Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=FireFlyDeveloper&show_icons=true&theme=radical)
@@ -28,10 +27,9 @@ Welcome to my GitHub profile! I'm a developer passionate about building awesome 
 ## 🌐 Connect with Me
 [![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FireFlyDeveloper)
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/kimslds)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:firefly@fireflylab.top)
+[![Email](https://img.shields.io/badge/Email-0A66C2?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:firefly@fireflylab.top)
 
 ## ☕ Support Me
-
-If you find my work helpful and want to support me, consider buying me a coffee!
+If you find my work helpful and would like to support me, consider buying me a coffee:  
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/fireflydeveloper)
