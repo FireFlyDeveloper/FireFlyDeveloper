@@ -11,9 +11,6 @@ Welcome to my GitHub profile! I'm a developer passionate about building impactfu
 ## 📊 GitHub Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=FireFlyDeveloper&show_icons=true&theme=radical)
 
-## 🏆 GitHub Trophies
-![Trophies](https://github-profile-trophy.vercel.app/?username=FireFlyDeveloper&theme=radical&no-bg=true&no-frame=true)
-
 ## 🛠️ Technologies & Tools
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
