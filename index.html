@@ -33,6 +33,7 @@
 
         html {
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
 
         body {
@@ -41,6 +42,7 @@
             color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
+            width: 100%;
         }
 
         .container {
@@ -166,6 +168,8 @@
             background-color: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(10px);
             transition: var(--transition);
+            left: 0;
+            right: 0;
         }
 
         .scrolled {
@@ -176,6 +180,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
         }
 
         .logo {
@@ -424,10 +429,11 @@
             gap: 0.5rem;
         }
 
-        /* GitHub Stats */
+        /* GitHub Stats - Fixed for mobile */
         .github-stats {
             text-align: center;
             position: relative;
+            overflow: hidden;
         }
 
         .stats-container {
@@ -435,6 +441,15 @@
             justify-content: center;
             margin-top: 2rem;
             animation: fadeIn 1.5s ease;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .stats-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
         }
 
         .technologies {
@@ -812,6 +827,7 @@
         @media (max-width: 576px) {
             .container {
                 width: 95%;
+                padding: 0 15px;
             }
 
             h1 {
