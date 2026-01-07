@@ -19,3 +19,6 @@ Welcome to my GitHub profile! I'm a developer passionate about building impactfu
 If you find my work helpful and would like to support me, consider buying me a coffee:  
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/fireflydeveloper)
+
+### ✍️Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
