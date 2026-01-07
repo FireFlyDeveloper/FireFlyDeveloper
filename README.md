@@ -1,10 +1,8 @@
 # Hi, I'm Kim Eduard Saludes 👋
 
-Welcome to my GitHub profile! I'm a developer passionate about building impactful projects with Python, Node.js, JavaScript, and more.
+Welcome to my GitHub profile! I'm a developer passionate about building impactful projects with Python, Node.js, Arduino, and more.
 
 ## 🚀 About Me
-- 🌱 Expanding my skills with **Kotlin and React Native for Android Development**
-- 💬 Open to discussions about **Python, JavaScript, Node.js, TypeScript, and Web Development**
 - 😄 Pronouns: **He/Him**
 - ⚡ Fun fact: Outside of coding, I enjoy working out, reading novels, and watching anime. I believe a balanced lifestyle fosters creativity and brings fresh perspectives to problem-solving.
 
