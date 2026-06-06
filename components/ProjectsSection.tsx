@@ -45,9 +45,8 @@ export default function ProjectsSection() {
         },
         {
           name: "Washing-Machine-Semi-Automatic",
-          description: "Documentation needed",
-          link: "https://github.com/FireFlyDeveloper/Washing-Machine-Semi-Automatic",
-          needsDocs: true
+          description: "ESP32-based smart washing machine controller with MQTT, vibration monitoring, and multiple wash modes",
+          link: "https://github.com/FireFlyDeveloper/Washing-Machine-Semi-Automatic"
         }
       ]
     },
@@ -61,15 +60,13 @@ export default function ProjectsSection() {
         },
         {
           name: "Power-Monitoring-Backend",
-          description: "Backend services for Power Monitoring system - Documentation needed",
-          link: "https://github.com/FireFlyDeveloper/Power-Monitoring-Backend",
-          needsDocs: true
+          description: "Bun + Hono backend with PostgreSQL, MQTT, WebSocket, and OpenAI integration",
+          link: "https://github.com/FireFlyDeveloper/Power-Monitoring-Backend"
         },
         {
           name: "Power-Monitoring-Arduino",
-          description: "Arduino firmware for Power Monitoring - Documentation needed",
-          link: "https://github.com/FireFlyDeveloper/Power-Monitoring-Arduino",
-          needsDocs: true
+          description: "LoRa-based dual-device energy monitoring system with Master-Slave architecture",
+          link: "https://github.com/FireFlyDeveloper/Power-Monitoring-Arduino"
         }
       ]
     },
@@ -88,9 +85,8 @@ export default function ProjectsSection() {
         },
         {
           name: "Drownsiness",
-          description: "Documentation needed",
-          link: "https://github.com/FireFlyDeveloper/Drownsiness",
-          needsDocs: true
+          description: "Computer vision-based driver drowsiness detector using MediaPipe FaceLandmarker with alarm system",
+          link: "https://github.com/FireFlyDeveloper/Drownsiness"
         }
       ]
     }
@@ -111,22 +107,13 @@ export default function ProjectsSection() {
               {category.items.map((project, projectIndex) => (
                 <div
                   key={projectIndex}
-                  className={`p-4 rounded-xl border transition-all duration-300 hover:shadow-sm ${
-                    project.needsDocs
-                      ? 'bg-amber-50 border-amber-200 hover:border-amber-300'
-                      : 'bg-white border-gray-100 hover:border-gray-200'
-                  }`}
+                  className="p-4 rounded-xl border transition-all duration-300 hover:shadow-sm bg-white border-gray-100 hover:border-gray-200"
                 >
                   <div className="flex items-start justify-between mb-2">
                     <div className="flex-1 min-w-0">
-                      <h4 className={`font-semibold text-gray-900 ${project.needsDocs ? 'text-amber-900' : ''}`}>
+                      <h4 className="font-semibold text-gray-900">
                         {project.name}
                       </h4>
-                      {project.needsDocs && (
-                        <span className="inline-block mt-1 text-xs text-amber-700 font-medium px-2 py-0.5 bg-amber-200 rounded">
-                          Documentation Needed
-                        </span>
-                      )}
                     </div>
                     <a
                       href={project.link}
@@ -139,7 +126,7 @@ export default function ProjectsSection() {
                       </svg>
                     </a>
                   </div>
-                  <p className={`text-sm ${project.needsDocs ? 'text-amber-800' : 'text-gray-600'} wrap-break-word`}>
+                  <p className="text-sm text-gray-600 wrap-break-word">
                     {project.description}
                   </p>
                 </div>
