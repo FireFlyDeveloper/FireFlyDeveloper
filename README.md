@@ -61,17 +61,17 @@
 - [VA](https://github.com/FireFlyDeveloper/VA) - Linux real-time voice assistant with wake word, TTS, and speech recognition
 - [Zero](https://github.com/FireFlyDeveloper/Zero) - Unofficial Facebook Messenger Bot
 - [TiktokAPI](https://github.com/FireFlyDeveloper/TiktokAPI) - TikTok API with no watermark
-- [Washing-Machine-Semi-Automatic](https://github.com/FireFlyDeveloper/Washing-Machine-Semi-Automatic) - Documentation needed
+- [Washing-Machine-Semi-Automatic](https://github.com/FireFlyDeveloper/Washing-Machine-Semi-Automatic) - ESP32-based smart washing machine controller with MQTT, vibration monitoring, and multiple wash modes
 
 ### Full Stack (Frontend + Backend + Arduino IoT)
 - [Power-Monitoring](https://github.com/FireFlyDeveloper/Power-Monitoring) - Real-time energy monitoring web app with AI-powered reporting (Next.js, React, TailwindCSS)
-- [Power-Monitoring-Backend](https://github.com/FireFlyDeveloper/Power-Monitoring-Backend) - Backend services for Power Monitoring system - Documentation needed
-- [Power-Monitoring-Arduino](https://github.com/FireFlyDeveloper/Power-Monitoring-Arduino) - Arduino firmware for Power Monitoring - Documentation needed
+- [Power-Monitoring-Backend](https://github.com/FireFlyDeveloper/Power-Monitoring-Backend) - Bun + Hono backend with PostgreSQL, MQTT, WebSocket, and OpenAI integration
+- [Power-Monitoring-Arduino](https://github.com/FireFlyDeveloper/Power-Monitoring-Arduino) - LoRa-based dual-device energy monitoring system with Master-Slave architecture
 
 ### Full Stack (Frontend + Backend)
 - [face-door-app](https://github.com/FireFlyDeveloper/face-door-app) - React + Capacitor Android app for face enrollment via Bluetooth
 - [face-door-pi](https://github.com/FireFlyDeveloper/face-door-pi) - Raspberry Pi face recognition door lock with 3-layer liveness detection
-- [Drownsiness](https://github.com/FireFlyDeveloper/Drownsiness) - Documentation needed
+- [Drownsiness](https://github.com/FireFlyDeveloper/Drownsiness) - Computer vision-based driver drowsiness detector using MediaPipe FaceLandmarker with alarm system
 
 ---
 
