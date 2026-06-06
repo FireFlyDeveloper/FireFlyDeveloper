@@ -37,8 +37,6 @@ export default function EducationSection() {
     }
   ]
 
-  const certifications = ["N/A"]
-
   return (
     <section className="space-y-6">
       <div className="flex items-center mb-2">
@@ -115,27 +113,6 @@ export default function EducationSection() {
             </div>
           </div>
         ))}
-      </div>
-      
-      <div className="pt-6 border-t border-gray-100">
-        <h4 className="font-medium text-gray-700 mb-4">Certifications & Professional Development</h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          {certifications.map((cert, index) => (
-            <div 
-              key={index} 
-              className="p-3 bg-white border border-gray-100 rounded-lg hover:border-gray-200 transition-colors hover:shadow-sm"
-            >
-              <div className="flex items-center">
-                <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center mr-3 shrink-0">
-                  <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <span className="text-sm text-gray-700 wrap-break-word">{cert}</span>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   )

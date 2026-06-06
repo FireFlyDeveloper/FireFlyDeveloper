@@ -4,6 +4,7 @@ import TechStack from '@/components/TechStack'
 import ServicesSection from '@/components/ServicesSection'
 import ContactSection from '@/components/ContactSection'
 import EducationSection from '@/components/EducationSection'
+import ProjectsSection from '@/components/ProjectsSection'
 import AvailabilityBadge from '@/components/AvailabilityBadge'
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
             <AboutSection />
             <ServicesSection />
             <TechStack />
+            <ProjectsSection />
           </div>
         </div>
       </div>

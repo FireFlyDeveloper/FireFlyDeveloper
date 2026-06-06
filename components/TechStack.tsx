@@ -17,11 +17,15 @@ const techCategories = [
   },
   {
     category: "Cloud & DevOps",
-    items: ["AWS", "Docker", "Kubernetes", "Google Cloud", "Vercel", "Firebase"]
+    items: ["AWS", "Docker", "Kubernetes", "Google Cloud", "Vercel", "Firebase", "Cloudflare"]
   },
   {
     category: "IoT & Embedded",
     items: ["Arduino", "Raspberry Pi", "TensorFlow", "PyTorch", "n8n"]
+  },
+  {
+    category: "AI & Automation",
+    items: ["AI", "AI Agents", "OpenAI", "Google Vertex AI", "Automation & Workflows"]
   }
 ]
 
