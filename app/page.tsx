@@ -19,28 +19,50 @@ export default function Home() {
         <ProfileHeader />
       </div>
 
-      <RevealOnScroll>
-        <Marquee />
-      </RevealOnScroll>
+      {/* Marquee breaks the hero wall with a single hairline + tight padding. */}
+      <div className="mt-16 md:mt-24">
+        <RevealOnScroll>
+          <Marquee />
+        </RevealOnScroll>
+      </div>
 
-      <div className="mx-auto max-w-[1320px] space-y-28 px-5 py-20 md:space-y-36 md:px-10 md:py-32 lg:px-14">
+      {/*
+        Section rhythm: explicit, identical top margins so the eye reads
+        every section break the same. py-* on the wrapper, plus a
+        consistent top margin on each child, gives even breathing.
+      */}
+      <div className="mx-auto max-w-[1320px] px-5 md:px-10 lg:px-14">
         <RevealOnScroll>
-          <ProjectsSection />
-        </RevealOnScroll>
-        <RevealOnScroll>
-          <AboutSection />
-        </RevealOnScroll>
-        <RevealOnScroll>
-          <TechStack />
-        </RevealOnScroll>
-        <RevealOnScroll>
-          <EducationSection />
-        </RevealOnScroll>
-        <RevealOnScroll>
-          <ContactSection />
+          <section className="mt-24 md:mt-32">
+            <ProjectsSection />
+          </section>
         </RevealOnScroll>
 
-        <footer className="grid grid-cols-1 gap-6 border-t border-[var(--color-line)] pt-10 sm:grid-cols-3">
+        <RevealOnScroll>
+          <section className="mt-24 md:mt-32">
+            <AboutSection />
+          </section>
+        </RevealOnScroll>
+
+        <RevealOnScroll>
+          <section className="mt-24 md:mt-32">
+            <TechStack />
+          </section>
+        </RevealOnScroll>
+
+        <RevealOnScroll>
+          <section className="mt-24 md:mt-32">
+            <EducationSection />
+          </section>
+        </RevealOnScroll>
+
+        <RevealOnScroll>
+          <section className="mt-24 md:mt-32">
+            <ContactSection />
+          </section>
+        </RevealOnScroll>
+
+        <footer className="mt-24 grid grid-cols-1 gap-6 border-t border-[var(--color-line)] pt-10 sm:grid-cols-3 md:mt-32">
           <div>
             <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--color-mute-2)]">
               © 2026
@@ -68,6 +90,9 @@ export default function Home() {
             </a>
           </div>
         </footer>
+
+        {/* Final bottom breathing space so the last section doesn't kiss the viewport edge. */}
+        <div className="h-16 md:h-24" aria-hidden="true" />
       </div>
     </main>
   );
