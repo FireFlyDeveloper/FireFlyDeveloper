@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: "Kim Eduard Saludes, Full-Stack Developer and IoT Engineer",
   description:
     "Portfolio of Kim Eduard Saludes. Production-grade web systems, IoT platforms, automation pipelines, and edge devices.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/avatar-192.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
