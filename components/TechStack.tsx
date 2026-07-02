@@ -1,51 +1,35 @@
 const techCategories = [
-  {
-    category: "Languages",
-    items: ["TypeScript", "Python", "Java", "C++", "Kotlin", "JavaScript"]
-  },
-  {
-    category: "Frontend",
-    items: ["React", "Next.js", "Vue.js", "TailwindCSS", "React Native", "Flutter"]
-  },
-  {
-    category: "Backend",
-    items: ["Node.js", "Django", "FastAPI", "Express.js", "GraphQL", "Socket.io"]
-  },
-  {
-    category: "Databases",
-    items: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Supabase"]
-  },
-  {
-    category: "Cloud & DevOps",
-    items: ["AWS", "Docker", "Kubernetes", "Google Cloud", "Vercel", "Firebase", "Cloudflare"]
-  },
-  {
-    category: "IoT & Embedded",
-    items: ["Arduino", "Raspberry Pi", "TensorFlow", "PyTorch", "n8n"]
-  },
-  {
-    category: "AI & Automation",
-    items: ["AI", "AI Agents", "OpenAI", "Google Vertex AI", "Automation & Workflows"]
-  }
-]
+  { category: "Languages", items: ["TypeScript", "Python", "Java", "C++", "Kotlin", "JavaScript"] },
+  { category: "Frontend", items: ["React", "Next.js", "Vue.js", "Tailwind", "React Native", "Flutter"] },
+  { category: "Backend", items: ["Node.js", "Bun", "Django", "FastAPI", "Express.js", "GraphQL"] },
+  { category: "Databases", items: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Supabase"] },
+  { category: "Cloud and DevOps", items: ["AWS", "Docker", "Kubernetes", "GCP", "Vercel", "Firebase", "Cloudflare"] },
+  { category: "IoT and Embedded", items: ["Arduino", "ESP32", "ESP8266", "Raspberry Pi", "LoRa", "MQTT"] },
+  { category: "AI and Automation", items: ["OpenAI", "Vertex AI", "n8n", "TensorFlow", "PyTorch"] },
+];
 
 export default function TechStack() {
   return (
-    <section className="space-y-6">
-      <div className="flex items-center mb-2">
-        <div className="w-8 h-px bg-gray-900 mr-4"></div>
-        <h2 className="text-2xl font-light text-gray-900">Technical Stack</h2>
+    <section id="stack" className="space-y-8 scroll-mt-24">
+      <div className="flex flex-col gap-2">
+        <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--color-mute)]">
+          Stack
+        </span>
+        <h2 className="text-2xl font-medium tracking-tight text-[var(--color-ink)] md:text-3xl">
+          Tools I reach for
+        </h2>
       </div>
-      
-      <div className="space-y-8">
-        {techCategories.map((category, index) => (
-          <div key={index}>
-            <h3 className="font-medium text-gray-700 mb-3">{category.category}</h3>
-            <div className="flex flex-wrap gap-2">
-              {category.items.map((tech, techIndex) => (
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {techCategories.map((cat) => (
+          <div key={cat.category} className="rounded-xl border border-[var(--color-line)] p-5">
+            <h3 className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--color-mute)]">
+              {cat.category}
+            </h3>
+            <div className="mt-4 flex flex-wrap gap-1.5">
+              {cat.items.map((tech) => (
                 <span
-                  key={techIndex}
-                  className="px-4 py-2 bg-gray-50 text-gray-700 rounded-lg border border-gray-200 text-sm font-medium hover:bg-gray-100 transition-colors"
+                  key={tech}
+                  className="rounded-md border border-[var(--color-line)] px-2.5 py-1 font-mono text-xs text-[var(--color-ink)]"
                 >
                   {tech}
                 </span>
@@ -55,5 +39,5 @@ export default function TechStack() {
         ))}
       </div>
     </section>
-  )
+  );
 }

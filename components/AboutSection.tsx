@@ -1,52 +1,56 @@
-export default function AboutSection() {
-  const aboutPoints = [
-    {
-      icon: "💻",
-      title: "Full Stack Developer",
-      description: "Focused on scalable, real-world systems"
-    },
-    {
-      icon: "🔧",
-      title: "Multi-Platform Expertise",
-      description: "Web, Mobile, Backend, Cloud, AI, and Embedded systems"
-    },
-    {
-      icon: "🤖",
-      title: "Automation Specialist",
-      description: "Strong interest in automation, agents, and distributed systems"
-    },
-    {
-      icon: "🏗️",
-      title: "Infrastructure Builder",
-      description: "Passionate about building platforms and tools"
-    }
-  ]
+const aboutPoints = [
+  {
+    n: "01",
+    title: "Full-stack development",
+    body: "Type-safe React and Next.js frontends, Node and Bun backends, and PostgreSQL data layers that hold up under real load.",
+  },
+  {
+    n: "02",
+    title: "Edge and embedded",
+    body: "ESP32 and ESP8266 firmware, LoRa point-to-point links, MQTT pipelines, and Raspberry Pi deployments running in production.",
+  },
+  {
+    n: "03",
+    title: "Automation and agents",
+    body: "Workflow engines, OpenAI-powered agents, and Hermes-style orchestration that turn repeated work into reliable systems.",
+  },
+  {
+    n: "04",
+    title: "Infrastructure that ships",
+    body: "Docker, Kubernetes, Cloudflare, and Vercel configured to keep latency low and rollbacks boring.",
+  },
+];
 
+export default function AboutSection() {
   return (
-    <section className="space-y-6">
-      <div className="flex items-center mb-2">
-        <div className="w-8 h-px bg-gray-900 mr-4"></div>
-        <h2 className="text-2xl font-light text-gray-900">About Me</h2>
-      </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {aboutPoints.map((point, index) => (
-          <div 
-            key={index} 
-            className="p-5 bg-white border border-gray-100 rounded-xl hover:border-gray-200 transition-colors group"
+    <section className="space-y-8">
+      <SectionHeader label="About" title="What I actually do" />
+      <div className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-2">
+        {aboutPoints.map((p) => (
+          <article
+            key={p.n}
+            className="bg-[var(--color-paper)] p-6 transition-colors hover:bg-[var(--color-ash)]"
           >
-            <div className="text-2xl mb-3 opacity-80">{point.icon}</div>
-            <h3 className="font-semibold text-gray-900 mb-2">{point.title}</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">{point.description}</p>
-          </div>
+            <div className="font-mono text-xs text-[var(--color-mute)]">{p.n}</div>
+            <h3 className="mt-3 text-lg font-medium tracking-tight text-[var(--color-ink)]">{p.title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-[var(--color-mute)]">{p.body}</p>
+          </article>
         ))}
       </div>
-      
-      <div className="mt-8 pt-6 border-t border-gray-100">
-        <p className="text-gray-600 italic">
-          ⚡ I work out, read novels, and watch anime — balance fuels creativity.
-        </p>
-      </div>
+      <p className="max-w-[60ch] text-sm leading-relaxed text-[var(--color-mute)]">
+        Off the keyboard: lifting, reading novels, watching anime. The balance keeps the work honest.
+      </p>
     </section>
-  )
+  );
+}
+
+function SectionHeader({ label, title }: { label: string; title: string }) {
+  return (
+    <div className="flex flex-col gap-2">
+      <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--color-mute)]">
+        {label}
+      </span>
+      <h2 className="text-2xl font-medium tracking-tight text-[var(--color-ink)] md:text-3xl">{title}</h2>
+    </div>
+  );
 }

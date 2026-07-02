@@ -1,54 +1,59 @@
-export default function ServicesSection() {
-  const services = [
-    {
-      title: "Full Stack Development",
-      description: "Scalable web applications with modern frameworks"
-    },
-    {
-      title: "Backend Architecture",
-      description: "Robust APIs and system design"
-    },
-    {
-      title: "IoT Platforms",
-      description: "End-to-end IoT solutions and dashboards"
-    },
-    {
-      title: "Automation Systems",
-      description: "Workflow automation and intelligent agents"
-    },
-    {
-      title: "Cloud Infrastructure",
-      description: "Deployment and optimization"
-    },
-    {
-      title: "Real-time Systems",
-      description: "WebSocket and live data applications"
-    }
-  ]
+const services = [
+  {
+    title: "Full-stack development",
+    body: "Production web apps with Next.js, React, and a typed API surface.",
+  },
+  {
+    title: "Backend architecture",
+    body: "Bun, Node, FastAPI, and Django services with clean data models.",
+  },
+  {
+    title: "IoT platforms",
+    body: "ESP32 firmware, LoRa links, MQTT brokers, and live dashboards.",
+  },
+  {
+    title: "Automation systems",
+    body: "n8n workflows, scheduled jobs, and OpenAI-powered agents.",
+  },
+  {
+    title: "Cloud infrastructure",
+    body: "Docker, Kubernetes, Cloudflare, and Vercel pipelines.",
+  },
+  {
+    title: "Real-time systems",
+    body: "WebSockets, server-sent events, and live telemetry.",
+  },
+];
 
+export default function ServicesSection() {
   return (
-    <section className="space-y-6">
-      <div className="flex items-center mb-2">
-        <div className="w-8 h-px bg-gray-900 mr-4"></div>
-        <h2 className="text-2xl font-light text-gray-900">Services & Expertise</h2>
+    <section id="services" className="space-y-8 scroll-mt-24">
+      <div className="flex flex-col gap-2">
+        <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--color-mute)]">
+          Services
+        </span>
+        <h2 className="text-2xl font-medium tracking-tight text-[var(--color-ink)] md:text-3xl">
+          What I can take on
+        </h2>
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {services.map((service, index) => (
-          <div 
-            key={index} 
-            className="p-5 bg-white border border-gray-100 rounded-xl hover:border-gray-200 transition-all duration-300 hover:shadow-sm group"
+      <ul className="grid grid-cols-1 gap-x-10 sm:grid-cols-2">
+        {services.map((s, i) => (
+          <li
+            key={s.title}
+            className="group flex items-start gap-5 border-t border-[var(--color-line)] py-5"
           >
-            <div className="flex items-start mb-3">
-              <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center mr-3 group-hover:bg-gray-100 transition-colors">
-                <span className="text-gray-600 text-sm font-medium">{index + 1}</span>
-              </div>
-              <h3 className="font-semibold text-gray-900">{service.title}</h3>
+            <span className="font-mono text-xs text-[var(--color-mute)] tabular-nums">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <div className="min-w-0">
+              <h3 className="text-base font-medium text-[var(--color-ink)] transition-colors group-hover:text-[var(--color-accent)]">
+                {s.title}
+              </h3>
+              <p className="mt-1 text-sm leading-relaxed text-[var(--color-mute)]">{s.body}</p>
             </div>
-            <p className="text-gray-600 text-sm pl-11">{service.description}</p>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
-  )
+  );
 }
