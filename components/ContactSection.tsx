@@ -1,7 +1,11 @@
 "use client";
 
-import { useRef } from "react";
+import { useState } from "react";
 import { SlotText } from "slot-text/react";
+
+import SectionHeader from "./SectionHeader";
+import ArrowUpRight from "./ArrowUpRight";
+import RevealOnScroll from "./RevealOnScroll";
 
 const socialLinks = [
   {
@@ -21,101 +25,111 @@ const socialLinks = [
   },
 ];
 
+type SlotTextHandle = { set: (t: string) => void; flash: (t: string) => void } | null;
+
 export default function ContactSection() {
-  const flashRef = useRef<{ set: (text: string) => void; flash: (text: string) => void } | null>(null);
+  const [, setHandle] = useState<SlotTextHandle>(null);
 
   const copyEmail = async () => {
     const email = "kim@fireflydev.dev";
+    const node = document.getElementById("copy-email-slot");
+    const ctrl = node as unknown as SlotTextHandle;
     try {
       await navigator.clipboard.writeText(email);
-      flashRef.current?.flash("Copied");
+      ctrl?.flash("Copied");
     } catch {
-      flashRef.current?.set("Press ⌘C");
+      ctrl?.set("Press Ctrl+C");
     }
   };
 
   return (
-    <section id="contact" className="space-y-8 scroll-mt-24">
-      <div className="flex flex-col gap-2">
-        <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--color-mute)]">
-          Contact
-        </span>
-        <h2 className="text-2xl font-medium tracking-tight text-[var(--color-ink)] md:text-3xl">
-          Let us build something
-        </h2>
-      </div>
+    <section id="contact" className="space-y-12 scroll-mt-24">
+      <SectionHeader
+        eyebrow="05 / Contact"
+        title="Let us build something useful."
+        intro="The fastest path is email. I read everything, usually within a day. Freelance and full-time roles, remote or on-site in Batangas."
+      />
 
-      <div className="rounded-2xl border border-[var(--color-line)] bg-[var(--color-ash)] p-6 sm:p-8">
-        <p className="max-w-[55ch] text-base leading-relaxed text-[var(--color-mute)]">
-          The fastest way to reach me is email. I read everything, usually within a day.
-        </p>
-
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-          <a
-            href="mailto:kim@fireflydev.dev"
-            className="group inline-flex w-fit items-center gap-3 rounded-full border border-[var(--color-ink)] bg-[var(--color-ink)] px-5 py-3 text-sm font-medium text-[var(--color-paper)] transition-colors hover:bg-transparent hover:text-[var(--color-ink)]"
-          >
-            <span className="font-mono">kim@fireflydev.dev</span>
-            <svg
-              className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M5 12h14M13 5l7 7-7 7" />
-            </svg>
-          </a>
-
-          <button
-            type="button"
-            onClick={copyEmail}
-            aria-label="Copy email to clipboard"
-            className="inline-flex w-fit items-center gap-2 rounded-full border border-[var(--color-line)] bg-[var(--color-paper)] px-5 py-3 text-sm font-medium text-[var(--color-ink)] transition-colors hover:border-[var(--color-ink)]"
-          >
-            <span
-              aria-live="polite"
-              className="inline-block min-w-[4.5rem] text-left font-mono"
-            >
-              <SlotText
-                ref={(instance: unknown) => {
-                  flashRef.current = instance as { set: (t: string) => void; flash: (t: string) => void } | null;
-                }}
-                text="Copy email"
-              />
+      <RevealOnScroll>
+        <div className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-[var(--color-line)] bg-[var(--color-line)] md:grid-cols-12">
+          <div className="bg-[var(--color-paper)] p-7 md:col-span-7 md:p-10">
+            <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--color-mute-2)]">
+              Direct email
             </span>
-          </button>
+            <a
+              href="mailto:kim@fireflydev.dev"
+              className="mt-4 block break-all text-2xl font-medium leading-tight tracking-tight text-[var(--color-ink)] transition-colors duration-300 hover:text-[var(--color-accent)] md:text-4xl"
+            >
+              kim@fireflydev.dev
+            </a>
+
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <a
+                href="mailto:kim@fireflydev.dev"
+                className="group inline-flex items-center gap-3 rounded-full border border-[var(--color-ink)] bg-[var(--color-ink)] px-5 py-3 text-sm font-medium text-[var(--color-paper)] transition-colors duration-500 [transition-timing-function:var(--ease-fluid)] hover:bg-transparent hover:text-[var(--color-ink)] active:scale-[0.98]"
+              >
+                <span>Open mail client</span>
+                <span className="grid h-7 w-7 place-items-center rounded-full bg-[var(--color-paper)]/10 transition-all duration-500 [transition-timing-function:var(--ease-fluid)] group-hover:bg-[var(--color-ink)]/10 group-hover:translate-x-0.5">
+                  <ArrowUpRight className="h-3 w-3" />
+                </span>
+              </a>
+              <button
+                type="button"
+                onClick={copyEmail}
+                aria-label="Copy email to clipboard"
+                className="group inline-flex items-center gap-2 rounded-full border border-[var(--color-line)] bg-[var(--color-paper)] px-5 py-3 text-sm font-medium text-[var(--color-ink)] transition-colors duration-500 [transition-timing-function:var(--ease-fluid)] hover:border-[var(--color-ink)] active:scale-[0.98]"
+              >
+                <span aria-live="polite" className="inline-block min-w-[5.5rem] text-left font-mono">
+                  <SlotText
+                    text="Copy email"
+                    ref={(instance: unknown) =>
+                      setHandle(instance as SlotTextHandle)
+                    }
+                  />
+                </span>
+                <span className="font-mono text-[var(--color-mute-2)]" id="copy-email-slot" />
+              </button>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-between bg-[var(--color-paper-2)] p-7 md:col-span-5 md:p-10">
+            <div>
+              <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--color-mute-2)]">
+                Based
+              </span>
+              <p className="mt-3 text-lg text-[var(--color-ink)]">Balayan, Batangas, PH</p>
+              <p className="mt-1 text-sm text-[var(--color-mute)]">Open to remote and on-site work</p>
+            </div>
+            <div className="mt-8 border-t border-[var(--color-line)] pt-6">
+              <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--color-mute-2)]">
+                Currently
+              </span>
+              <p className="mt-2 text-sm text-[var(--color-ink)]">BSIT 3rd year, 2nd semester</p>
+              <p className="mt-1 text-sm text-[var(--color-mute)]">Batangas State University</p>
+            </div>
+          </div>
         </div>
-      </div>
+      </RevealOnScroll>
 
       <ul className="divide-y divide-[var(--color-line)] border-y border-[var(--color-line)]">
-        {socialLinks.map((link) => (
+        {socialLinks.map((link, i) => (
           <li key={link.name}>
             <a
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between py-4 transition-colors hover:bg-[var(--color-ash)] sm:px-3"
+              className="group flex items-center justify-between py-4 transition-colors duration-500 [transition-timing-function:var(--ease-fluid)] hover:bg-[var(--color-ash)] sm:px-3"
             >
-              <div>
-                <p className="text-sm font-medium text-[var(--color-ink)]">{link.name}</p>
-                <p className="font-mono text-xs text-[var(--color-mute)]">{link.handle}</p>
+              <div className="flex items-center gap-4">
+                <span className="font-mono text-[10px] tabular-nums text-[var(--color-mute-2)]">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <p className="text-sm font-medium text-[var(--color-ink)]">{link.name}</p>
+                  <p className="font-mono text-xs text-[var(--color-mute)]">{link.handle}</p>
+                </div>
               </div>
-              <svg
-                className="h-4 w-4 text-[var(--color-mute)] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--color-ink)]"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.75"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 17 17 7M9 7h8v8" />
-              </svg>
+              <ArrowUpRight className="h-4 w-4 text-[var(--color-mute-2)] transition-all duration-500 [transition-timing-function:var(--ease-fluid)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--color-ink)]" />
             </a>
           </li>
         ))}

@@ -18,8 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${geist.variable} ${geistMono.variable}`}>
-      <body>
-        <div className="min-h-[100dvh]">{children}</div>
+      <body className="bg-paper text-[var(--color-ink)]">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-md focus:bg-[var(--color-ink)] focus:px-3 focus:py-2 focus:text-sm focus:text-[var(--color-paper)]"
+        >
+          Skip to content
+        </a>
+        {children}
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+import SectionHeader from "./SectionHeader";
+
 const educationHistory = [
   {
     school: "Batangas State University, Balayan Campus",
@@ -37,23 +39,20 @@ const educationHistory = [
 
 export default function EducationSection() {
   return (
-    <section id="education" className="space-y-8 scroll-mt-24">
-      <div className="flex flex-col gap-2">
-        <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--color-mute)]">
-          Education
-        </span>
-        <h2 className="text-2xl font-medium tracking-tight text-[var(--color-ink)] md:text-3xl">
-          Where I learned it
-        </h2>
-      </div>
-      <ol className="relative space-y-6 border-l border-[var(--color-line)] pl-6">
+    <section id="timeline" className="space-y-10 scroll-mt-24">
+      <SectionHeader
+        eyebrow="04 / Timeline"
+        title="Where I learned it."
+        intro="A straight line from elementary to where I am now. The transfer between programs is the part of the story most people skip."
+      />
+      <ol className="relative grid grid-cols-1 gap-x-10 gap-y-8 border-l border-[var(--color-line)] pl-6 md:grid-cols-2">
         {educationHistory.map((edu) => (
           <li key={edu.school} className="relative">
             <span
               className={`absolute -left-[27px] top-2 grid h-3 w-3 place-items-center rounded-full border-2 ${
                 edu.current
                   ? "border-[var(--color-accent)] bg-[var(--color-paper)]"
-                  : "border-[var(--color-line)] bg-[var(--color-paper)]"
+                  : "border-[var(--color-line-2)] bg-[var(--color-paper)]"
               }`}
             >
               {edu.current && <span className="h-1 w-1 rounded-full bg-[var(--color-accent)]" />}
