@@ -31,7 +31,7 @@ export default function ContactSection() {
   const [, setHandle] = useState<SlotTextHandle>(null);
 
   const copyEmail = async () => {
-    const email = "kim@fireflydev.dev";
+    const email = "kimeduardsaludes@icloud.com";
     const node = document.getElementById("copy-email-slot");
     const ctrl = node as unknown as SlotTextHandle;
     try {
@@ -57,15 +57,15 @@ export default function ContactSection() {
               Direct email
             </span>
             <a
-              href="mailto:kim@fireflydev.dev"
-              className="mt-4 block break-all text-2xl font-medium leading-tight tracking-tight text-[var(--color-ink)] transition-colors duration-300 hover:text-[var(--color-accent)] md:text-4xl"
+              href="mailto:kimeduardsaludes@icloud.com"
+              className="mt-4 block break-all text-2xl font-medium leading-tight tracking-tight text-[var(--color-ink)] transition-colors duration-300 hover:text-[var(--color-accent)] md:text-3xl"
             >
-              kim@fireflydev.dev
+              kimeduardsaludes@icloud.com
             </a>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
-                href="mailto:kim@fireflydev.dev"
+                href="mailto:kimeduardsaludes@icloud.com"
                 className="group inline-flex items-center gap-3 rounded-full border border-[var(--color-ink)] bg-[var(--color-ink)] px-5 py-3 text-sm font-medium text-[var(--color-paper)] transition-colors duration-500 [transition-timing-function:var(--ease-fluid)] hover:bg-transparent hover:text-[var(--color-ink)] active:scale-[0.98]"
               >
                 <span>Open mail client</span>
